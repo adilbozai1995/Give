@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Donation Info</title>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="popup.js" ></script>
+
+  </head>
+
+  <link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <body style=" background-color: #F8EBB5  ; border-width: 5px; border-style: solid;">
+    <div style="border-width: 5px; border-style: solid; border-color:#9B3821 ">
+
+    <h1 id="change" style=" font-weight:bold; font-size:40px; font-family: serif; color:#9B3821; text-align: center;; padding:5px;">
+      <i class="fas fa-hand-holding-usd fa-2x"></i>
+      <b> DONATION DETAILS</b>
+    </h1>
+
+    <h2 style=" text-align: center; font-weight:bold; border-width: 3px; border-style: solid; background-color: #D8F3FA; font-size:20px; font-family: serif; color:#2B5583; padding:1px;">
+      <i class="fas fa-people-carry fa-sm"></i><br>
+      <b> CONTRIBUTER</b>
+    </h2>
+
+
+
+      <div id="maindiv" style=" background-color: #D8F3FA; border-width: 3px; border-style: solid; border-color:#2B5583 ">
+
+        <br>
+        <label class="labels"><i class="fa fa-user"></i> First Name <br> </label>
+        <input id="fname" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+        <label class="labels"><i class="fa fa-user"></i> Last Name <br> </label>
+        <input id="lname" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+        <label class="labels"><i class="fas fa-address-card"></i> Address <br> </label>
+        <input id='addy' class="addy" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+        <label class="labels"><i class="fas fa-university"></i> City <br> </label>
+        <input id="city" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+        <label class="labels"><i class="fas fa-check-square"></i> State <br> </label>
+         <select id="states" class="states"><option value=""></option><option value="AK">AK</option><option value="AL">AL</option>
+           <option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option>
+           <option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option>
+           <option value="GA">GA</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option>
+           <option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option>
+           <option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option>
+           <option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MS">MS</option>
+           <option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option>
+           <option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option>
+           <option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option>
+           <option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option>
+           <option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option>
+           <option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option>
+           <option value="WY">WY</option>
+         </select><br><br>
+
+         <label class="labels"><i class="fab fa-periscope"></i> Zip <br> </label>
+         <input id="zip" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+         <label class="labels"><i class="fas fa-at"></i> Email Address <br> </label>
+         <input id="email" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+         <label class="labels"><i class="fas fa-phone"></i> Phone Number <br> </label>
+         <input id="num" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+       </div>
+
+       <h2 style=" text-align: center; font-weight:bold; border-width: 3px; border-style: solid; background-color: #D8F3FA; font-size:20px; font-family: serif; color:#2B5583; padding:1px;">
+         <i class="fas fa-credit-card fa-sm"></i><br>
+         <b>CARD DETAILS</b>
+       </h2>
+
+       <div id="maindiv2" style=" background-color: #D8F3FA; border-width: 3px; border-style: solid; border-color:#2B5583 ">
+
+         <br>
+         <i class="fas fa-check"></i>
+         <label class="labels" style=" font-size:12px;"> Accepted Cards <br> </label>
+
+            <div class="icon-container">
+              <i class="fab fa-cc-visa fa-2x" style="color:navy;"></i>
+              <i class="fab fa-cc-amex fa-2x" style="color:blue;"></i>
+              <i class="fab fa-cc-mastercard fa-2x" style="color:red;"></i>
+              <i class="fab fa-cc-discover fa-2x" style="color:orange;"></i>
+            </div><br>
+
+            <label class="labels"><i class="far fa-credit-card"></i> Card Number <br> </label>
+            <input id="card-num" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+            <label class="labels"><i class="fas fa-barcode"></i> Card Security Code <br> </label>
+            <input id="sec-code" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+            <label class="labels"><i class="fas fa-calendar-alt"></i></i> Expiration <br> </label>
+            <select id="cc_expir_month" autocomplete="off" name="cc_expir_month"><option value="">Month</option>
+              <option value="01">01</option><option value="02">02</option><option value="03">03</option>
+              <option value="04">04</option><option value="05">05</option><option value="06">06</option>
+              <option value="07">07</option><option value="08">08</option><option value="09">09</option>
+              <option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+            &nbsp;
+            <select id="cc_expir_year" autocomplete="off" name="cc_expir_year"><option value="">Year</option>
+              <option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option>
+              <option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option>
+              <option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option>
+              <option value="2027">2027</option><option value="2028">2028</option></select>
+            <br><br>
+
+       </div>
+
+
+       <h2 style=" text-align: center; font-weight:bold; border-width: 3px; border-style: solid; background-color: #D8F3FA; font-size:20px; font-family: serif; color:#2B5583; padding:1px;">
+         <i class="fas fa-money-bill-alt"></i><br>
+         <b>DONATION AMOUNT</b>
+       </h2>
+
+       <div id="maindiv3" style=" background-color: #D8F3FA; border-width: 3px; border-style: solid; border-color:#2B5583 ">
+         <br>
+         <label class="labels"><i class="fas fa-dollar-sign"></i> Amount <br> </label>
+         <input id="amount" type="text" size="22" style="border-width: 2px; border-style: groove;"><br><br>
+
+       </div>
+       <br><br>
+       <input style=" width: 100%; margin:0 auto; display: block; text-align: center; font-weight:bold; color: #2B5583; background-color: #D8F3FA; padding: 12px;" type="submit" value="SAVE" class="btn" id="Sbtn">
+       <br>
+
+
+  </div>
+
+  </body>
+
+
+</html>
